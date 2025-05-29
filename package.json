@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://SEU_USUARIO.github.io/NOME_DO_REPOSITORIO",
+  "homepage": "https://henriqueyudyonoomoto.github.io/noise-pollution-slides-main",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,8 +19,9 @@
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
+    "gh-pages": "^6.1.1",
     "typescript": "~5.7.2",
-    "vite": "^6.2.0",
-    "gh-pages": "^6.1.1"
+    "vite": "^6.2.0"
   }
 }

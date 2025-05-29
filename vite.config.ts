@@ -1,15 +1,11 @@
-import path from 'path';
 import { defineConfig } from 'vite'
-import { fileURLToPath } from 'node:url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/NOME_DO_REPOSITORIO/',
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, '.'),
-    },
-  },
-});
+  plugins: [react()],
+  base: '/noise-pollution-slides-main/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  }
+})
