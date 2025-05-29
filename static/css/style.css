@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Handles the conditional text-centering for the title on the first slide with an image */
+/* Applies when the viewport is wider than 4:3 aspect ratio (!isVerticalLayout) */
+@media (min-aspect-ratio: 4/3) {
+  .first-slide-complex-title {
+    text-align: center;
+  }
+}
