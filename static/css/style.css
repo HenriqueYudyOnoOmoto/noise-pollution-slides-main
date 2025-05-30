@@ -20,8 +20,6 @@ body {
   animation: fade-in 0.5s ease-out forwards;
 }
 
-/* Handles the conditional text-centering for the title on the first slide with an image */
-/* Applies when the viewport is wider than 4:3 aspect ratio (!isVerticalLayout) */
 @media (min-aspect-ratio: 4/3) {
   .first-slide-complex-title {
     text-align: center;
