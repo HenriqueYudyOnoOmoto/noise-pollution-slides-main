@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Interativa - Poluição Sonora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container" class="app-container">
+        <main class="main-content">
+            <div class="slide-container fade-in" id="slide-container">
+                <div class="slide-image-container">
+                    <img id="slide-image" src="" alt="" class="slide-image">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <h1 class="slide-title" id="slide-title"></h1>
+                        <div class="slide-divider"></div>
+                        <p class="slide-progress" id="slide-progress"></p>
+                        <p class="slide-description" id="slide-description"></p>
+                        <ul class="slide-list" id="slide-list"></ul>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div class="slide-footer-content">
+                        <button id="prev-slide-btn" class="slide-nav-btn prev" aria-label="Slide Anterior">
+                            &#8592; <span class="nav-text">Anterior</span>
+                        </button>
+                        <div class="slide-num" id="slide-num"></div>
+                        <button id="next-slide-btn" class="slide-nav-btn next" aria-label="Próximo Slide">
+                            <span class="nav-text">Próximo</span> &#8594;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="slide-footer-instructions">
+            <p>Use as setas do teclado para navegar.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
